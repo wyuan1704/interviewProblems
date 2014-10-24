@@ -19,14 +19,14 @@
 	  }
 	  else
 	  {
-		  if(A[mid] > A[mid+1])
+		  if(A[mid] < A[mid+1])
 		  {
 			  // Case 3: concave point.
 			  return vertexBsearch(A, mid+1, e); // or vertexBsearch(A, s, mid-1);
 		  }
 		  else
 		  {
-			  // case 2: Increase
+			  // case 4: Decrease
 			  return vertexBsearch(A, s, mid-1);
 		  }
 	  }
@@ -46,3 +46,4 @@
 	  // Increase from 0 and decrease to n-1. A vertex must exist in between.
 	  return vertexBsearch(A, 0, n-1);
   }
+  
