@@ -7,3 +7,5 @@ http://stackoverflow.com/questions/3183582/what-is-the-fastest-substring-search-
 https://github.com/RaphaelJ/fast_strstr.git gives a practical implementation, which reads the string by shifting a reading window the size of the sub-string and keeps track of a SUM of all the charactors in the window. The benchmarks shows that it's faster than GUN::strstr(). The author suggests the user to test this on their data before using it.
 
 There's similar implementation in http://www.opensource.apple.com/source/gnutar/gnutar-413/tar/lib/strstr.c. The author says that "My personal strstr() implementation that beats most other algorithms."
+
+Trie is suitable for the original problem
